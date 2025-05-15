@@ -1,0 +1,61 @@
+#titulo {
+    font-size: 50px;
+    color: black;
+}
+
+
+body {
+    background-image:url("Gray Watercolor Background Instagram Story.png") ;
+}
+button{
+    background-color: rgb(138, 136, 136);
+    padding: 20px 30px;
+}
+.Raynielys {
+display: flex;
+}
+p{
+    font-size: 30px;
+    color: black;
+}
+.botones{
+background-color: antiquewhite;
+}
+
+.botones{
+
+background-color: beige;
+}
+
+.texx{
+    background-color: beige;
+}
+.documento{
+    background-color: beige;
+}
+.arrial{
+    background-color: aliceblue;
+}
+
+#titulo{
+font-size: 50px;
+color: brown;
+}
+#inicio{
+    font-size:50px;
+    color: brown;
+}
+.conteiner{
+    width: 400px;
+    margin: 0 auto;
+}
+section article{
+    background-color: beige;
+margin: 1rem 0;
+border-radius: 0.5rem;
+}
+.mata{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 20px;
+    color: black;
+}

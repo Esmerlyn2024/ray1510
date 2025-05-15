@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  
+ </style>
+</head>
+
+<body class="lot">
+
+  <!-- Imagen de encabezado o decorativa -->
+  <img src="Gold_Luxury_Initial_Circle_Logo-removebg-preview (2).png" alt="logo" width="200" />
+
+  <h1 class="parafo">Bienvenidos a Mi Blog</h1>
+
+  <!-- Barra de búsqueda -->
+  <div class="barra-busqueda">
+    <input type="text" id="searchInput" class="input-busqueda" placeholder="Buscar..." />
+    <button class="btn-buscar" onclick="searchFunction()">Buscar</button>
+  </div>
+
+  <!-- Botones -->
+  <div class="button-container" style="text-align: center;">
+    <button class="poli" data-name="sobre mi" onclick="location.href='sobre.html'">Sobre Mi</button>
+    <button class="poli" data-name="pantalones" onclick="location.href='pantalones.html'">Pantalones</button>
+    <button class="poli" data-name="faldas" onclick="location.href='faldas.html'">Faldas</button>
+    <button class="poli" data-name="zapatos" onclick="location.href='zapatos.html'">Zapatos</button>
+    <button class="poli" data-name="comida"
+    onclick="location.href='comida.html'">Comida</button>
+  </div>
+
+  <!-- Script de búsqueda -->
+  <script>
+    function searchFunction() {
+      let input = document.getElementById('searchInput').value.toLowerCase();
+      let buttons = document.querySelectorAll('.poli');
+
+      buttons.forEach(button => {
+        let name = button.getAttribute('data-name').toLowerCase();
+        if (name.includes(input)) {
+          button.classList.remove('hidden');
+        } else {
+          button.classList.add('hidden');
+        }
+      });
+    }
+  </script>
+
+  <!-- Footer -->
+  <footer>
+   <button onclick="window.location.href='https://daaiwebtech.github.io/'" style="
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+">
+  Volver Atras
+</button> 
+    <p>&copy; 2025 Nombre: Mi Blog. Todos los derechos reservados.</p>
+   <ul>
+      <li><a href="privacidad.html">Política de privacidad</a></li>
+      <li><a href="#terminos">Términos y condiciones</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>

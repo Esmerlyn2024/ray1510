@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weeknd - Reproductor de Música</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>The Weeknd - Reproductor de Música</h1>
+        <div class="music-player">
+            <audio id="audioPlayer" controls>
+                <source id="audioSource" src="blinding_lights.mp3" type="audio/mp3">
+                Tu navegador no soporta el reproductor de audio.
+            </audio>
+            <div class="track-info">
+                <h2 id="trackTitle">Blinding Lights</h2>
+                <p id="artist">Artista: The Weeknd</p>
+            </div>
+            <div class="Perfect">
+                <button id="prevBtn">Anterior</button>
+                <button id="playPauseBtn">Reproducir</button>
+                <button id="nextBtn">Siguiente</button>
+            </div>
+        </div>
+        <div class="playlist">
+            <h2>Lista de Canciones de The Weeknd</h2>
+            <ul>
+                <div class="Perfect"></div>  
+                <li data-src="blinding_lights.mp3" data-title="Blinding Lights">creepin</li>
+                <li data-src="save_your_tears.mp3" data-title="Save Your Tears">Save Your Tears</li>
+                <li data-src="starboy.mp3" data-title="Starboy">Starboy</li>
+                <li data-src="can't_feel_my_face.mp3" data-title="Can't Feel My Face">Can't Feel My Face</li>
+                <li data-src="the_hills.mp3" data-title="The Hills">The Hills</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+  
